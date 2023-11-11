@@ -1,14 +1,27 @@
 #include <iostream>
 using namespace std;
+
+bool isGreaterThanTen(int number) {
+    if (number>10)
+    {
+        return true;
+    }
+
+    else
+    {
+        return false;
+    }    
+}
+
 int main() {
     int a;
 
     cout << "Unesi broj: ";
     cin >> a;
     
-    if (a>10)
+    if (isGreaterThanTen(a)==true)
     {
-        cout << "Broj je veći od 10!";
+        cout << "Broj je veći od 10!" << endl;
     }
     else
     {
